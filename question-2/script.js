@@ -40,7 +40,6 @@ function count(data){
                 }
             }
         }
-        //console.log(found)
     }
     return map;
 }
@@ -69,15 +68,9 @@ console.log(`Running question #2 with args ${args}`)
 
 let csvData = fs.readFileSync(file1, "utf-8");
 csvData = csvData.trim().replace(/([^,]+),\s*([^,]+),\s*([^,]+),\s*([^,]+)/gi, '$1,$2,$3,$4');
-//console.log("Adjusted csv:", csvData);
 
 let { meta, data } = Papa.parse(csvData, { header: true });
-
-//console.log("Parsed data:", data);
-//console.log("Metadata:", meta);
 
 var sine = count(data);
 
 writecsv(sine);
-
-//console.log(sine);
