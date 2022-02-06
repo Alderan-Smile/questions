@@ -4,11 +4,11 @@
 
 # Razonamiento
 
-> El puzzle tiene una alta dificultad ya que ocupa un tipo de problema semejante a la secuencia de fibonacci el cual suma el numero anterior con el numero que le sigue.
+El puzzle tiene una alta dificultad ya que ocupa un tipo de problema semejante a la secuencia de fibonacci el cual suma el numero anterior con el numero que le sigue.
 
-> En este ejercicio no se uso ninguna librería adicional para resolverlo.
+En este ejercicio no se uso ninguna librería adicional para resolverlo.
 
-> En este caso la secuencia se refiere cuantas formas existe para subir una escalera de N peldaños con un máximo de 2 peldaños para subir y un mínimo de 1. Con esta información podemos inferir que una escalera con N como cantidad de peldaños:
+En este caso la secuencia se refiere cuantas formas existe para subir una escalera de N peldaños con un máximo de 2 peldaños para subir y un mínimo de 1. Con esta información podemos inferir que una escalera con N como cantidad de peldaños:
 
 - Si N<C siendo C =< 3 entonces N<C = N=C formas de subir una escalera
 

@@ -16,4 +16,6 @@
 
 # Razonamiento
 
-_Escribir aquí los supuestos asumidos, reflexiones y explicaciones de la solución_
+Es un problema no muy complejo de solucionar ya que las funciones necesarias para solucionar este problema son de recorrido de string y listas o arreglos.
+
+Con esto ya en mente podemos tener una funcion no muy larga y reutilizar parte de soluciones de problemas anteriores como lo es la solicitud de entrada (input), para luego utilizar la entrada escrita en la verificacion de parentesis.

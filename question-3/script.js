@@ -4,7 +4,7 @@
  * $ node scritp.js 'a * (b + c)'
  */
 
-const args = process.argv.slice(-1);
+ const args = process.argv.slice(-1);
 console.log(`Running question #3 with args ${args}`)
 
 /**
@@ -13,11 +13,36 @@ console.log(`Running question #3 with args ${args}`)
  * @param {String} str - String to be evaluated
  * @returns {Boolean} Returns true if string is valid.
  */
+var text;
+
+const readline = require('readline').createInterface({
+  input: process.stdin,
+  output: process.stdout
+})
+
 function parenthesisChecker(str) {
-  // TODO: Implement validation logic
-  return true;
+  let stck = [];
+
+  for (i = 0; i < str.length; i++){
+    let char = stck[stck.length-1]
+    if(str[i] == "(" || str[i] == "[" || str[i] == "{"){
+      stck.push(str[i])
+    }else if ((char == "(" && str[i]== ")") ||
+     (char == "[" && str[i]== "]") ||
+     (char == "{" && str[i]== "}")){
+       stck.pop()
+     }
+  }
+  return stck.length ? false : true
 }
 
-const isValid = parenthesisChecker(args);
-console.log(`parenthesisChecker("${args}") = ${isValid}`);
+
+readline.question('Ingrese texto a verificar: ', text =>{
+
+  const isValid = parenthesisChecker(text);
+
+  console.log(`parenthesisChecker("${text}") = ${isValid}`);
+  readline.close()
+})
+
 

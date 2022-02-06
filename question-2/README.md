@@ -22,8 +22,8 @@
 
 # Razonamiento
 
-> Este es un problema complejo ya que no se puede realizar una lectura de archivo y escritura sin librerías adicionales, es por eso que si o si se es necesario usar librerías.
+Este es un problema complejo ya que no se puede realizar una lectura de archivo y escritura sin librerías adicionales, es por eso que si o si se es necesario usar librerías.
 
-> Es por esta razón que se utilizaron las librerías de nodejs llamadas 'fs' y 'papaparse' para lectura y escritura, ademas de usarse para hacer parse de datos y escribir datos como si fuera json.
+Es por esta razón que se utilizaron las librerías de nodejs llamadas 'fs' y 'papaparse' para lectura y escritura, ademas de usarse para hacer parse de datos y escribir datos como si fuera json.
 
-> Para este ejercicio se asumieron que los tipo de eventos únicos llamados click e impression hacia referencia a que cada evento era único según el id de usuario, es por eso que se uso un contador auxiliar para poder obtener la cantidad exacta de cada evento.
+Para este ejercicio se asumieron que los tipo de eventos únicos llamados click e impression hacia referencia a que cada evento era único según el id de usuario, es por eso que se uso un contador auxiliar para poder obtener la cantidad exacta de cada evento.
